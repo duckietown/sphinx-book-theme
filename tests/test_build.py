@@ -336,7 +336,7 @@ def test_logo_only(sphinx_build_factory):
     )
 
     logo_text = sphinx_build.html_tree("page1.html").find_all(
-        "h1", attrs={"id": "site-title"}
+        "p", attrs={"id": "site-title"}
     )
     assert not logo_text
 
